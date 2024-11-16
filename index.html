@@ -1,72 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover peace of mind with professional therapy services.">
-    <title>Psychologist | Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Your website description here">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Your Website Name</h1>
         <nav>
-            <ul class="menu">
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- Hamburger Icon -->
+            <div id="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-        <h1>Find Peace of Mind</h1>
-        <p>Your journey to mental wellness starts here.</p>
-        <a href="#contact" class="button">Book a Session</a>
-    </header>
+    </div>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/about.jpg" alt="About Me">
-        <p>As a licensed psychologist, I help individuals navigate life's challenges with care and understanding. Together, we can work towards a healthier and more balanced life.</p>
-    </section>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Your Website</h2>
+        <p>Your website's tagline goes here. Make it engaging and concise.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+</section>
 
-    <section id="services">
-        <h2>Services</h2>
-        <div class="service">
-            <img src="images/service1.jpg" alt="Individual Therapy">
-            <h3>Individual Therapy</h3>
-            <p>Personalized sessions tailored to your needs.</p>
-        </div>
-        <div class="service">
-            <img src="images/service2.jpg" alt="Couples Counseling">
-            <h3>Couples Counseling</h3>
-            <p>Strengthen your relationship with guided support.</p>
-        </div>
-        <div class="service">
-            <img src="images/service3.jpg" alt="Online Sessions">
-            <h3>Online Sessions</h3>
-            <p>Convenient and flexible virtual therapy from the comfort of your home.</p>
-        </div>
-    </section>
+<!-- About Section -->
+<section id="about" class="content-section">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Provide some information about your organization or website. Keep it short and to the point.</p>
+    </div>
+</section>
 
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <blockquote>"I found the support I needed to overcome my anxiety. Highly recommend!"</blockquote>
-        <blockquote>"Professional, understanding, and genuinely caring. I feel much better now."</blockquote>
-    </section>
+<!-- Contact Section -->
+<section id="contact" class="content-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </div>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+<!-- JavaScript for Mobile Menu -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+</script>
 </body>
 </html>
