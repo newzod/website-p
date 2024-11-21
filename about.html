@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Sana Mind">
+    <title>About Us - Sana Mind</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Sana Mind</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Hamburger Icon -->
+    <div id="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- About Section -->
+
+<section id="about" class="content-section">
+    <div class="container">
+        <h2>Om Mig</h2>
+        <p>Hej! Jag heter Nadjela och är legitimerad psykolog. Mitt främsta mål som psykolog är att erbjuda en
+            behandling som verkligen känns rätt för dig – skräddarsydd efter dina unika behov. För mig är en trygg och
+            stark relation mellan klient och terapeut en av nycklarna till framgångsrik terapi.</p>
+        <p>Min specialisering är inom OCD/tvångssyndrom och ångest, samt neuropsykiatriska funktionsvariationer som
+            autism och ADHD.</p>
+
+        <h2>Bakgrund om mig:</h2>
+        <p>Jag är psykolog med bred erfarenhet inom specialistpsykiatri, inklusive barnpsykologi, neuropsykiatri och
+            familjebehandling. Jag är legitimerad i både Sverige och Nya Zeeland och kan erbjuda behandling på både
+            svenska och engelska.</p>
+        <p>Som psykolog strävar jag efter att vara flexibel och anpassningsbar och erbjuder en rad olika terapiformer,
+            från videosamtal till textbaserad terapi. Om det skulle framgå att du eller ditt barn behöver ytterligare
+            stöd, exempelvis en neuropsykiatrisk utredning, kan jag också bistå med att skriva remisser och genomföra
+            initiala bedömningar.</p>
+        <h2>Vad kan du förvänta dig?</h2>
+
+        <p>I terapin lyssnar jag aktivt och är nyfiken på dig som individ. Under våra samtal lyssnar jag noga och
+            säkerställer att du känner dig hörd och förstådd. Jag har fått höra att jag har en varm, icke-dömande och
+            jordnära stil, vilket gör att många känner sig trygga med mig som psykolog.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Sana Mind. All rights reserved.</p>
+    </div>
+</footer>
+<!-- JavaScript for Mobile Menu -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+</script>
+</body>
+</html>

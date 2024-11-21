@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakta Sana Mind">
+    <title>Kontakta oss - Sana Mind</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Sana Mind</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html#home">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Hamburger-ikon -->
+    <div id="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- Kontaktsektion -->
+<section class="content-section">
+    <div class="container">
+        <h2>Kontakta oss</h2>
+        <p>Har du några frågor eller vill boka en tid? Fyll i formuläret nedan eller mejla oss på <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <label for="name">Fullständigt namn:</label>
+            <input type="text" id="name" name="name" required placeholder="Ange ditt fullständiga namn">
+
+            <label for="email">E-postadress:</label>
+            <input type="email" id="email" name="email" required placeholder="Ange din e-postadress">
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Ange ditt telefonnummer">
+
+            <label for="date">Önskat datum:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Önskad tid:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Skriv eventuella frågor eller annan information här"></textarea>
+
+            <button type="submit" class="btn-submit">Skicka</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Sana Mind. Alla rättigheter förbehållna.</p>
+    </div>
+</footer>
+
+<!-- JavaScript för mobilmeny -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+</script>
+</body>
+</html>

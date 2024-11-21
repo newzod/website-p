@@ -1,4 +1,11 @@
 /* Reset some basic styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +15,35 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #004d40;
+    background-color: #e0f2f1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the main content flex-grow to fill the viewport */
+main {
+    flex: 1;
 }
 
 /* Header Styles */
 header {
-    background: #333;
+    background: #004d40;
     color: #fff;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header h1 {
@@ -36,8 +57,15 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #b2dfdb;
     text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #004d40;
+    background: #b2dfdb;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
 /* Hamburger Menu Styles */
@@ -52,7 +80,7 @@ header nav ul li a {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: #b2dfdb;
     border-radius: 3px;
 }
 
@@ -62,7 +90,7 @@ header nav ul li a {
         position: absolute;
         top: 60px;
         right: 0;
-        background: #333;
+        background: #004d40;
         width: 200px;
         flex-direction: column;
         align-items: flex-start;
@@ -91,15 +119,54 @@ header nav ul li a {
     }
 }
 
+/* Content Section Styles */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    padding: 40px 20px;
+    background: #fff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.content-section .container {
+    max-width: 800px; /* Limit width for a document-like feel */
+    margin: 0 auto;
+    text-align: left; /* Align text to the left */
+    line-height: 1.6; /* Improve readability */
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.content-section p {
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+/* Footer Styles */
+footer {
+    background: #004d40;
+    color: #e0f2f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+}
 /* Hero Section Styles */
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 400px;
+    color: #e0f2f1;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 20px;
 }
 
 .hero-content {
@@ -119,42 +186,51 @@ header nav ul li a {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #007BFF;
-    color: #fff;
+    background: #004d40;
+    color: #e0f2f1;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #00251a;
+    color: #b2dfdb;
 }
 
-/* Content Section Styles */
-.content-section {
-    padding: 40px 20px;
-    background: #fff;
-    margin-bottom: 20px;
-}
-
-.content-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.content-section p {
-    text-align: center;
+.contact-form {
     max-width: 600px;
     margin: 0 auto;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
 }
 
-footer p {
-    margin: 0;
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
