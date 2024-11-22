@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Sana Mind">
+    <title>About Us - Sana Mind</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Sana Mind</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html#home">Hem</a></li>
+                <li><a href="price.html">Pris</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Hamburger Icon -->
+    <div id="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- About Section -->
+<!-- Main Content -->
+<section id="services" class="content-section">
+    <div class="container">
+        <h2>Pris och tillgänglighet</h2>
+        <p>Priset kan variera beroende på tjänst och upplägg. Vanligen 1200 kr per session (1 timme).
+        Om kontakten förmedlas via ett försäkringsbolag utgår inga extra kostnader.
+            Alla kostnader faktureras i efterhand.<p>
+
+            <h2>Tillgänglighet</h2>
+
+            <p>Jag har tillgänglighet för nya patienter.
+            Du får en tid så snart som möjligt.
+            Avbokning, sent återbud och uteblivande
+            Avbokning sker senast 24 timmar före utsatt tid.
+
+            Sent återbud (inom 24 timmar innan besök) eller uteblivande debiteras till fullt pris.</p>
+
+
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Sana Mind. All rights reserved.</p>
+    </div>
+</footer>
+<!-- JavaScript for Mobile Menu -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+</script>
+</body>
+</html>
