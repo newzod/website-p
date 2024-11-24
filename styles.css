@@ -80,12 +80,15 @@ header nav ul li a:hover {
     display: block;
     width: 25px;
     height: 3px;
-    background: #b2dfdb;
+    background: #ffffff;
     border-radius: 3px;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    body {
+        background: #ffffff;
+    }
     header nav ul {
         position: absolute;
         top: 60px;
