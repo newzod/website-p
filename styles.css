@@ -233,4 +233,20 @@ footer {
 }
 
 
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+    padding-bottom: 25px;
+}
+
+
+
+
 
